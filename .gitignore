@@ -1,0 +1,7 @@
+/compile_command_too_long/too_many_files/*.cc
+!/compile_command_too_long/too_many_files/.gitkeep
+
+/external
+/bazel-*
+/compile_commands.json
+/.cache/
