@@ -9,6 +9,7 @@ refresh_compile_commands(
     targets = {
         "@//compile_command_too_long:compile_with_too_long_duplicated_flags": "",
         "@//compile_command_too_long:compile_with_large_definitions": "",
+        "@//compile_command_too_long:link_with_large_definitions": "",
         "@//compile_command_too_long:too_many_files": "",
     },
 )

@@ -1,0 +1,9 @@
+{
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/compile_commands.json",
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    },
+    "clangd.arguments": ["--header-insertion=never"] 
+}

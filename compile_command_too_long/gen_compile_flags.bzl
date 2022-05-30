@@ -15,3 +15,12 @@ def compile_with_too_long_duplicated_flags(srcs, visibility = []):
         visibility = visibility,
         copts = copts,
     )
+
+def link_with_too_long_duplicated_flags(srcs, visibility = []):
+    linkopts = ["/bigobj" for _ in range(10000)]
+    native.cc_binary(
+        name = "link_with_too_long_duplicated_flags",
+        srcs = srcs,
+        visibility = visibility,
+        linkopts = linkopts,
+    )

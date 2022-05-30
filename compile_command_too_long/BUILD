@@ -2,6 +2,7 @@ load(
     "//compile_command_too_long:gen_compile_flags.bzl",
     "compile_with_large_definitions",
     "compile_with_too_long_duplicated_flags",
+    "link_with_too_long_duplicated_flags",
 )
 
 compile_with_large_definitions(
@@ -11,6 +12,11 @@ compile_with_large_definitions(
 
 compile_with_too_long_duplicated_flags(
     srcs = ["compile_with_too_long_duplicated_flags.cc"],
+    visibility = ["//visibility:public"],
+)
+
+link_with_too_long_duplicated_flags(
+    srcs = ["link_with_too_long_duplicated_flags.cc"],
     visibility = ["//visibility:public"],
 )
 
